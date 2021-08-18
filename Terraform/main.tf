@@ -1,9 +1,10 @@
 terraform {
-  backend "azure" {}
+  required_providers {
+    azurerm = "2.52.0"
+  }
 }
 
 provider "azurerm" {
-  version = "=2.20.0"
   features {}
   }
 
